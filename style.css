@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,
+ol {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 1170px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+:root {
+    --primary-color: #0f2f44;
+    --text-color: #ffffff;
+}
+
+/* HEADER  */
+#header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+#header .row {
+    justify-content: space-between;
+}
+#header .row span {
+    padding: 22px 0;
+    line-height: 0;
+}
+/* HEADER END */
+
+/* Nav start */
+nav ul li{
+    display: inline-block;
+    padding: 40px 19px;
+}
+nav .row {
+    justify-content: space-between;
+    align-items: center;
+}
+nav .row .active {
+    background-color:#ffda62;
+}
+ /* nav ul button { 
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    outline: 0;
+    border: 1px solid #e0e0e0;
+    padding: 0 10px;
+}
+nav ul .btn {
+    padding: 0 10px;
+}  */
+
+/* Nav end */
+
+/* Banner start */
+#banner{
+    background-image: url(./BN_image/Bizzency.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 601px;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+#banner .context{
+    width: 450px;
+    height: 50px;
+}
+#banner .context {
+    padding: 145px 0;
+    width: 40%;
+    line-height: 50px;
+}
+#banner .context h1{
+    font-size: 40px;
+    color: var(--primary-color);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+#banner .context h1 b{
+    font-size: 300 px;
+    font-family: Abril system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 450px;
+}
+#banner .context h2{
+    color: #9797e4;
+    font-weight: 400;
+    font-size: 32px;
+    font-family: ubuntu;
+    letter-spacing: 12px;
+}
+#banner .context p {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 15px;
+    color: #eec3c3;
+    width: 450px;
+}
+
+#banner .context .click {
+    margin-top: 20px;
+    width: 80%;
+    gap: 25px;
+    display: flex;
+}
+   
+
+#banner .context .click .btn_1 {
+    background-color: #6767d4;
+    padding: 16px 20px;
+    font-size: 20px;
+    color: #ecc3c3;
+    cursor: alias;
+    border: 1px;
+    border-radius: 5px;
+    
+}
+#banner .container .btn_1 img {
+    height: 100px;
+    width: 100px;
+}
+
+/* about start */
+#about .container .row .text-item {
+    width: 45%;
+    padding-top: 60px;
+}
+.text-item span{
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.text-item h2 {
+    padding-top: 5px; 
+    font-size: 50px;
+    font-weight: 500;
+    font-family: abril fatface;
+        text-align: left;
+        line-height: 30px;
+    
+}
+.text-item p{
+    
+        font-size: 18px;
+        font-family: ubuntu;
+}
+.text-item ul li {
+    font-size: 18px;
+    line-height: 40px;
+    padding-left: 25px;
+ }
+ .text-item button {
+    display: inline-block;
+    color: #0b466d;
+    background-color: #f1e754e1;
+    padding: 10px 15px;
+    font-weight: 400;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: cell;
+    line-height: 15px;
+    margin-top: 20px;
+}
+/* skill start */
+#skill .container .row {
+    margin: 70px 0;
+    padding: 35px;
+}
+#skill .container .row .skill-part-1 {
+    width: 50%;
+}
+#skill .container .row .skill-part-2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: flex-end;
+    align-items: end;
+}
+.text_1 {
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: 200;
+    font-family: ubuntu;
+}
+.skill-part-2 h3 {
+    font-size: 40px;
+    font-family: abril fatface;
+}
+.text_2 {
+    font-size: 15px;
+    margin: 20px 0;
+}
+/* skill end */
+#service {
+    margin: 80px 0;
+    background-color: #f5f5f5;
+}
+.common {
+    text-align: center;
+    margin: auto;
+    padding: 30px 0;
+}
+.common p {
+    font-size: 16px;
+    color: #0f2f44;
+    font-weight: 150;
+}
+.common h3 {
+    font-size: 40px;
+    color: #0f2f44;
+    font-family: abril fatface;
+}
+.service-2nd {
+    display: flex;
+}
+#service .card {
+    width: calc(33.33% - 20px);
+    margin: 0 10px;
+    display: flex;
+    background-color: #eeeeee;
+    position: relative;
+    cursor: pointer;
+}
+#service .card .img {
+    padding: 75px 20px;
+    background-color: #e9e9e9;
+}
+#service .card .contains {
+    padding: 30px 25px 30px 20px;
+}
+#service .card .contains h4 {
+    padding-bottom: 20px;
+}
+p {
+    font-size: 16px;
+    font-family: ubuntu;
+}
+#service .card .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #0f2f44;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: scale(0);
+}
+#service .card .overflow-content {
+    background-color: 0f2f44;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#service .card .icons {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+#service .card .icons span {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #ffc712;
+    display: inline-block;
+}
+.fa-solid, .fas {
+    font-weight: 900;
+}
